@@ -1,9 +1,7 @@
 'use strict';
 
 const _         = require('lodash'),
-      data      = require('./static/data.json'),
-      chalk     = require('chalk'),
-      boxen     = require('boxen');
+      data      = require('./static/data.json')
 
 let facts = () => {
 
@@ -27,19 +25,7 @@ let facts = () => {
   _.forEach(sentences, (sentence, index) => {
     text += `${_.join(sentence, ' ')}${sentences.length - 1 == index ? '' : '\n'}`;
   });
-
-  console.log(boxen(text, {
-    padding: 1,
-    margin: {
-      top: 1,
-      right: 0,
-      bottom: 1,
-      left: 1,
-    },
-    borderColor: 'blue',
-    borderStyle: 'round',
-  }));
-
+  return text
 };
 
 // Default Export
