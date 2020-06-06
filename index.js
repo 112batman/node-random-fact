@@ -25,7 +25,7 @@ let facts = () => {
   _.forEach(sentences, (sentence, index) => {
     text += `${_.join(sentence, ' ')}${sentences.length - 1 == index ? '' : '\n'}`;
   });
-  return text
+  return text;
 };
 
 // Default Export
