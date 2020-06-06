@@ -1,3 +1,6 @@
+This fork is NOT available on npm, below downloads are of the project this was forked from, the downloads are NOT for this fork!!!
+This is a fork that instead of making a box with a random fact will return a string with the fact
+
 Random Fact
 ===========
 
